@@ -1,0 +1,27 @@
+@charset 'utf8';
+html,
+head,
+nav,
+li,
+a,
+ul,
+input,
+img,
+span,
+header,
+body,
+p {
+    margin: 0px;
+    padding: 0px;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.font {
+    font-family: italic arial, sans-serif;
+    font-size: 18px;
+    color: black;
+}
