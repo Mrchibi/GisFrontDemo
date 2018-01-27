@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=7">
+    <meta http-equiv="CONTENT-TYPE" content="text/html, charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=yes">
+    <title>GIS---地理信息系统</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../config/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="nav-menu">
+    </header>
+
+
+
+    <main class="main"></main>
+
+
+    <!-- modal module -->
+
+
+
+
+    <script type="text/javascript">
+        $(function(){
+            $(".demo-option").click(function(event) {
+                /* Act on the event */
+                $("#myModal-detail-info").modal();
+                $("myModal-detail-info").css({
+                    zIndex: 1100
+                });
+            });
+            /*
+             模态框关闭按钮code。缺点：没有封装，无法复用
+             */
+            $(".closemodal1").click(function(event) {
+                /* Act on the event */
+                $('#myModal').modal('toggle');
+            });
+            $(".closemodal2").click(function(event) {
+                /* Act on the event */
+                $('#myModal-detail-info').modal('toggle');
+            });
+        })
+
+    </script>
+    <script src="../config/bootstrap-3.3.7-dist/js/jquery.js"></script>
+    <script src="../config/bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script>
+</body>
+</html>

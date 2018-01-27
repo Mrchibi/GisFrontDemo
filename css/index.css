@@ -1,0 +1,104 @@
+@charset 'utf8';
+html,
+head,
+nav,
+li,
+a,
+ul,
+input,
+img,
+span,
+header,
+body,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.font {
+  font-family: italic arial, sans-serif;
+  font-size: 18px;
+  color: black;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(../config/Job.jpg);
+}
+body a {
+  text-decoration: none;
+}
+.main {
+  position: relative;
+}
+.tool-ul {
+  position: absolute;
+  right: 0px;
+  top: -19px;
+  background-color: #F8F8F8;
+  border-radius: 2px;
+}
+.tool-ul li {
+  float: left;
+  list-style: none;
+  padding: 0px 20px;
+}
+.tool-ul li abbr {
+  outline: none;
+}
+.tool-ul a {
+  color: black;
+}
+.tool-ul a:hover {
+  text-decoration: none;
+}
+.modal {
+  width: 100%;
+}
+.modal .modal-dialog {
+  width: 60%;
+  margin: 10px auto;
+  position: absolute;
+  left: 22%;
+  top: 0%;
+}
+.modal .form-control {
+  display: inline-block;
+  height: 30px;
+  width: 50px;
+}
+.modal .form-group {
+  padding: 0px;
+  padding-left: 15px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.modal .form-group input {
+  padding: 0px;
+  display: inline-block;
+}
+.modal-body-left {
+  width: 75%;
+  border-right: 1px solid #EDEBEB;
+}
+.modal-body-right {
+  position: absolute;
+  top: ;
+  right: 3px;
+  width: 25%;
+}
+.modal-body-right .btn {
+  margin: 10px 0px 0px 20px;
+}
+.fset div {
+  margin-top: 10px;
+}
+.fset input {
+  display: block;
+  width: 50px !important;
+}
