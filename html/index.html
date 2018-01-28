@@ -7,15 +7,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=yes">
     <title>GIS---地理信息系统</title>
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../config/icon/iconfont.css">
+    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../config/bootstrap-3.3.7-dist/css/bootstrap.min.css">
 </head>
 <body>
-    <header class="nav-menu">
+    <header class="nav-menu"><!-- 导航条菜单栏 -->
+        <nav class="navbar navbar-default" role="navigation"><!-- 导航条容器 -->
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="login.html">GIS地理信息测绘</a><!-- 导航条标题-->
+                </div>
+                <div id="myexample">
+                    <ul class="nav navbar-nav"><!--导航条列表容器 -->
+                        <li class="dropdown"><!--下拉菜单项容器-->
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">人员信息
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul><!--下拉菜单项-->
+                        </li><!-- 下拉菜单 -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">房屋信息
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">房屋录入</a></li>
+                                <li><a href="#">楼房录入</a></li>
+                                <li><a href="#">房屋查询</a></li>
+                                <li><a href="#">房屋显示</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">标绘管理
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">标绘工具</a></li>
+                                <li><a href="#">清除</a></li>
+                            </ul>
+
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">电子围栏
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">电子围栏</a></li>
+                                <li><a href="#">告警记录</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">防空信息
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">
+                                    事件管理
+                                </a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">入户走访
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">走访记录</a></li>
+                                <li><a href="#">走访管理</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">系统设置
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">特殊人员信息管理</a></li>
+                                <li class="dropdown-submenu"><a href="#" >位置配置&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <b class="glyphicon glyphicon-triangle-right" style="font-size:10px;"></b>
+                                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">起始位置</a></li>
+                                        <li><a href="#">重点设置</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">数据更新状态</a></li>
+                                <li><a href="#">账户管理</a></li>
+                                <li><a href="#">地址维护</a></li>
+                                <li><a href="#">修改密码</a></li>
+                                <li><a href="#">数据整理</a></li>
+                                <li><a href="#">关于</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
     </header>
 
 
 
-    <main class="main"></main>
+    <main class="main">
+        <div class="measurement-tool row">
+            <ul class="tool-ul">
+                <li><abbr title="HankWang1"><a href="" class="iconfont icon-cehuifabuzhaopian"></a></abbr></li>
+                <li><abbr title="HankWang2"><a href="" class="iconfont icon-cehuifabuxianshiweizhi"></a></abbr></li>
+                <li><abbr title="HankWang3"><a href="" class="iconfont icon-cehuifabuyijianfabu"></a></abbr></li>
+                <li><abbr title="HankWang4"><a href="" class="iconfont icon-cehuiyudili" ></a></abbr></li>
+
+            </ul>
+        </div>
+        <div class="pic"></div>
+    </main>
 
 
     <!-- modal module -->
