@@ -1,0 +1,703 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+		<title>GIS---地理信息系统</title>
+		<link rel="stylesheet" href="../css/index.css">
+		<link rel="stylesheet" href="../config/icon/iconfont.css">
+		<link rel="stylesheet" href="../config/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+		<script src="../config/jquery-3.2.1.min.js" type="text/javascript"></script>
+		<script src="../config/bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript"></script>
+		<script  src="../js/index.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<header class="nav-menu">
+			<nav class="navbar navbar-default" role="navigation">
+			    <div class="container-fluid"> 
+				    <div class="navbar-header">
+				        <a class="navbar-brand" href="#">GIS地理信息测绘</a>
+				    </div>
+				    <div id="myexample">
+				        <ul class="nav navbar-nav">
+				            <li class="dropdown">
+				                <a href="#" class="dropdown-toggle" data-toggle="dropdown">人员信息
+				                    <b class="caret"></b>
+				                </a>
+				                <ul class="dropdown-menu">
+				                    <li>
+				                        <a id="action-1" href="#"  data-toggle="modal" data-target="#myModal">人员编辑</a>
+				                    </li>
+				                    <li>
+				                        <a href="#">人员查询</a>
+				                    </li>
+				                    <li>
+				                        <a href="#">高级查询</a>
+				                    </li>
+				                    <li>
+				                        <a href="#">人员关系</a>
+				                    </li>
+				                </ul>
+				            </li>
+				            <li class="dropdown">
+				                <a href="#" class="dropdown-toggle" data-toggle="dropdown">房屋信息
+				                    <b class="caret"></b>
+				                </a>
+				                <ul class="dropdown-menu">
+				                    <li>
+				                        <a id="action-1" href="#">房屋录入</a>
+				                    </li>
+				                    <li>
+				                        <a href="#">楼房录入</a>
+				                    </li>
+				                    <li>
+				                        <a href="#">房屋查询</a>
+				                    </li>
+				                    <li>
+				                        <a href="#">房屋显示</a>
+				                    </li>
+				                </ul>
+				            </li>
+				            <li class="dropdown">
+				                <a href="#" class="dropdown-toggle" data-toggle="dropdown">标绘管理
+				                    <b class="caret"></b>
+				                </a>
+				                <ul class="dropdown-menu">
+				                    <li>
+				                        <a id="action-1" href="#">标绘工具</a>
+				                    </li>
+				                    <li>
+				                        <a href="#">清除</a>
+				                    </li>
+				                </ul>
+				            </li>
+				            <li class="dropdown">
+				                <a href="#" class="dropdown-toggle" data-toggle="dropdown">电子围栏
+				                    <b class="caret"></b>
+				                </a>
+				                <ul class="dropdown-menu">
+				                    <li>
+				                        <a id="action-1" href="#">电子围栏</a>
+				                    </li>
+				                    <li>
+				                        <a href="#">告警记录</a>
+				                    </li>
+				                </ul>
+				            </li>
+				            <li class="dropdown">
+				                <a href="#" class="dropdown-toggle" data-toggle="dropdown">防控信息
+				                    <b class="caret"></b>
+				                </a>
+				                <ul class="dropdown-menu">
+				                    <li>
+				                        <a id="action-1" href="#">事件管理</a>
+				                    </li>
+				                </ul>
+				            </li>
+				            <li class="dropdown">
+				                <a href="#" class="dropdown-toggle" data-toggle="dropdown">入户走访
+				                    <b class="caret"></b>
+				                </a>
+				                <ul class="dropdown-menu">
+				                    <li>
+				                        <a id="action-1" href="#">走访记录</a>
+				                    </li>
+				                    <li>
+				                        <a href="#">走访管理</a>
+				                    </li>
+				                </ul>
+				            </li>
+				            <li class="dropdown">
+				                <a href="#" class="dropdown-toggle" data-toggle="dropdown">系统设置
+				                    <b class="caret"></b>
+				                </a>
+				                <ul class="dropdown-menu">
+				                    <li>
+				                        <a id="action-1" href="#">特殊人员信息管理</a>
+				                    </li>
+				                    <li class="liul">
+				                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">位置配置&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b class="glyphicon glyphicon-triangle-right" style="font-size:10px;"></b>
+				                        </a>
+				                        <ul class="dropdown-menu">
+						                    <li>
+						                         <a id="action-1" href="#">起始位置</a>
+						                    </li>
+						                    <li>
+						                        <a href="#">重点设置</a>
+						                    </li>
+						                    
+						                </ul>
+				                    </li>
+				                    <li>
+				                        <a href="#">数据更新状态</a>
+				                    </li>
+				                    <li>
+				                        <a href="#">账户管理</a>
+				                    </li>
+				                    <li>
+				                        <a href="#">地址维护</a>
+				                    </li>
+				                    <li>
+				                        <a href="#">修改密码</a>
+				                    </li>
+				                    <li>
+				                        <a href="#">数据整理</a>
+				                    </li>
+				                    <li>
+				                        <a href="#">关于</a>
+				                    </li>
+				                </ul>
+				            </li>
+				        </ul>
+				    </div>
+			    </div>
+			</nav>
+			</div>
+		</header>
+		<main class="main">
+			<div class="measurement-tool row">
+				<ul class="tool-ul">
+					<li><abbr title="HankWang1"><a href="" class="iconfont icon-cehuifabuzhaopian"></a></abbr></li>
+					<li><abbr title="HankWang2"><a href="" class="iconfont icon-cehuifabuxianshiweizhi"></a></abbr></li>
+					<li><abbr title="HankWang3"><a href="" class="iconfont icon-cehuifabuyijianfabu"></a></abbr></li>
+					<li><abbr title="HankWang4"><a href="" class="iconfont icon-cehuiyudili" ></a></abbr></li>
+					
+				</ul>
+			</div>
+			<!-- sidebar frame -->
+				
+			<div class="sidebar-menu">
+				<ul class="mainmenu">
+	                <li class="limenu"><span>基本情况</span></li>
+	                <li class="limenu"><span>重点情况</span></li>
+	                <ul class="submenu">
+	                    <div class="expand-triangle"></div>
+	                    <li><b class=""></b><a href="">乡政府</a></li>
+	                    <li><a href="">村委会</a></li>
+	                    <li><a href="">中学</a></li>
+	                    <li><a href="">小学</a></li>
+	                    <li><a href="">派出所</a></li>
+	                    <li><a href="">警务室</a></li>
+	                    <li><a href="">清真寺</a></li>
+	                    <li><a href="">巴扎</a></li>
+	                    <li><a href="">卫生院</a></li>
+	                </ul> 
+	                <li class="limenu"><span>关注人群</span></li>
+	                <ul class="submenu">
+	                    <div class="expand-triangle"></div>
+	                    <li><a href="">特殊群体</a></li>
+	                    <li><a href="">重点人员</a></li>
+	                    <li><a href="">宗教人士</a></li>
+	                    <li><a href="">严打在押人员</a></li>
+	                </ul> 
+	                <li class="limenu"><span>其他的情况</span></li>
+	                <ul class="submenu">
+	                    <div class="expand-triangle"></div>
+	                    <li><a href="">121212</a></li>
+	                    <li><a href="">121212</a></li>
+	                    <li><a href="">121212</a></li>
+	                    <li><a href="">121212</a></li>
+	                    <li><a href="">121212</a></li>
+	                </ul>
+	                <li class="limenu"><span>最后的信息</span></li>
+	            </ul>
+			</div>
+			<div class="pic"></div>
+		</main>
+		<!-- modal module -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static" data-keyboard="true">
+			<div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			    	<div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">人员信息</h4>
+			      	</div>
+			    	<div class="modal-body">
+
+			      		<div class="modal-body-left ">			      				
+			      			<form action="" class="form-inline row">
+			      				<div class="input-left">
+				      				<div class="form-group col-md-6">
+				      					<label for="">身份证号:</label>
+				      					<input type="text" class="form-control" placeholder="4115454512122445">
+				      				</div>
+				      				<div class="form-group col-md-6">
+				      					<label for="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;户号:</label>
+				      					<input type="text" class="form-control" placeholder="SASD">
+				      				</div>
+				      				<div class="form-group col-md-6">
+				      					<label for="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;姓名:</label>
+				      					<input type="text" class="form-control" placeholder="HankWang">
+				      				</div>
+				      				<div class="form-group col-md-6">
+				      					<label for="">与户主关系:</label>
+				      					<select class="form-control">
+											<option>父子</option>
+											<option>母子</option>
+										</select>
+				      				</div>
+				      				<div class="form-group col-md-6">
+				      					<label for="">出生日期:</label>
+				      					<input type="text" class="form-control datepicker" placeholder="SASD">
+				      				</div>
+				      				<div class="form-group col-md-6">
+				      					<label for="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;性别:</label>
+				      					<input type="text" class="form-control" placeholder="SASD">
+				      				</div>
+				      				<div class="form-group col-md-6">
+				      					<label for="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;民族:</label>
+				      					<select class="form-control">
+											<option>汉族</option>
+											<option>回族</option>
+											<option>壮族</option>
+											<option>维吾尔族</option>
+										</select>
+				      				</div>
+				      				<div class="form-group col-md-6">
+				      					<label for="">&nbsp;&nbsp;&nbsp;&nbsp;政府面貌:</label>
+				      					<input type="text" class="form-control" placeholder="SASD">
+				      				</div>
+				      				<div class="form-group col-md-6">
+				      					<label for="">宗教信仰:</label>
+				      					<select class="form-control">
+											<option>佛教</option>
+											<option>道教</option>
+											<option>基督教</option>
+											<option>天主教</option>
+										</select>
+				      				</div>
+				      				<div class="form-group col-md-6">
+				      					<label for="">&nbsp;&nbsp;&nbsp;&nbsp;联系电话:</label>
+				      					<select class="form-control">
+											<option>群众</option>
+											<option>官员</option>
+										</select>
+				      				</div>
+				      				<div class="form-group col-md-6">
+				      					<label for="">文化程度:</label>
+				      					<select class="form-control">
+											<option>文盲</option>
+											<option>小学</option>
+											<option>初中</option>
+											<option>高中</option>
+											<option>大学</option>
+											<option>硕士</option>
+											<option>博士</option>
+										</select>
+				      				</div>
+				      				<div class="form-group col-md-6">
+				      					<label for="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;职务:</label>
+				      					<input type="text" class="form-control" placeholder="SASD">
+				      				</div>
+				      				<div class="form-group col-md-5">
+				      					<label for="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;职业:</label>
+				      					<select class="form-control">
+											<option>农民</option>
+											<option>个体户</option>
+											<option>商人</option>
+										</select>
+				      				</div>
+				      				<div class="form-group col-md-7">
+				      					<label for="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;特殊职业技能:</label>
+				      					<input type="text" class="form-control" placeholder="SASD">
+				      				</div>
+				      				<div class="form-group col-md-12">
+				      					<label for="">家庭住址:</label>
+				      					<input type="text" class="form-control" placeholder="SASD">
+				      				</div>
+				      				<div class="form-group col-md-6">
+				      					<label for="">服务处所:</label>
+				      					<input type="text" class="form-control" placeholder="SASD">
+				      				</div>
+				      				<div class="form-group col-md-12">
+				      					<label for="">所属区域:</label>
+				      					<select class="form-control">
+											<option>新疆/齐齐哈尔市/内蒙古飒飒大师大/asdasdasdad</option>
+											<option>四川</option>
+											<option>湖南</option>
+										</select>
+			      				</div>
+
+			      				<div class="modal-body-right">
+			      					<div class="pic">
+			      						<img src="" alt="" width="200px" height="260px">
+			      					</div>
+			      					<div class="demo-option">
+										<button type="button" class="" ="" value="" style="background-color:white;border-radius:4px;box-shadow:1px;border:1px solid #C0C0C0;margin-top: 10px;">
+											流动人口/户籍相关/涉稳相/扶贫相关
+										</button>
+										<button type="button" class="" value="" style="background-color:white;border-radius:4px;box-shadow:1px;border:1px solid #C0C0C0;padding: 8px 80px;text-align: center;">
+											关系图	
+										</button>
+			      					</div>
+			      				</div>
+
+			      			</form>
+			      		</div>
+			      	</div>
+			    	<div class="modal-footer">
+				        <button type="button" class="btn btn-default closemodal1" data-dismiss="modal" >关闭</button>
+				        <button type="button" class="btn btn-primary">保存修改</button>
+			      	</div>
+			    </div>
+  			</div>
+		</div>
+		<div class="modal fade" id="myModal-detail-info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static" data-keyboard="true" >
+			<div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			    	<div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">人员信息</h4>
+			      	</div>
+			    	<div class="modal-body">
+			      		 <ul class="nav nav-tabs" role="tablist">
+						 	<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">户籍相关</a></li>
+						    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">扶贫相关</a></li>
+						    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">涉稳相关</a></li>
+						    <li role="presentation"><a href="#personinfo" aria-controls="personinfo" role="tab" data-toggle="tab">流动人员信息</a></li>
+						   
+						  </ul>
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="home">
+									<form action="" class="form-inline row">
+										<div class="form-group col-md-4">
+											<label for="">家庭类别</label>
+											<select class="form-control">
+												<option>一般户</option>
+												<option>地主</option>
+												<option>富婆</option>
+											</select>
+										</div>
+										<div class="form-group form-group col-md-4">
+											<label for="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;血型</label>
+											<select class="form-control">
+												<option>A</option>
+												<option>B</option>
+												<option>AB</option>
+												<option>O</option>
+											</select>
+										</div>
+										<div class="form-group form-group col-md-4">
+											<label for="">兵役情况</label>
+											<select class="form-control">
+												<option>未服兵役</option>
+												<option>已服兵役</option>
+											</select>
+										</div>
+										<div class="form-group form-group col-md-4">
+											<label for="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;身高</label>
+											<select class="form-control">
+												<option>150cm以下</option>
+												<option>150cm</option>
+												<option>155cm</option>
+												<option>160cm</option>
+												<option>165cm</option>
+												<option>170cm</option>
+												<option>175cm</option>
+												<option>180cm</option>
+												<option>185cm以上</option>
+											</select>
+										</div>
+										<div class="form-group form-group col-md-4">
+											<label for="">户口是否应消除</label>
+											<select class="form-control">
+												<option>否</option>
+												<option>是</option>
+											</select>
+										</div>
+										<div class="form-group form-group col-md-4">
+											<label for="">应消未消原因</label>
+											<select class="form-control">
+												<option>我怎么知道啊</option>
+												<option>其他的原因</option>
+											</select>
+										</div>
+										<div class="form-group form-group col-md-4">
+											<label for="">婚姻状况</label>
+											<select class="form-control">
+												<option>已婚</option>
+												<option>未婚</option>
+											</select>
+										</div>
+										<div class="form-group form-group col-md-4">
+											<label for="">未落户原因</label>
+											<select class="form-control">
+												<option>其他的</option>
+												<option>其他的原因</option>
+											</select>
+										</div>
+										<div class="form-group form-group col-md-4">
+											<label for="">出生地</label>
+											<select class="form-control">
+												<option>地球</option>
+												<option>火球</option>
+												<option>水球</option>
+											</select>
+										</div>
+										<div class="form-group form-group col-md-4">
+											<label for="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;籍贯</label>
+											<input type="text" class="form-control" placeholder="地球中国广东省惠州市惠州学院20#IT宿舍" maxlength="50">
+										</div>
+									</form>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="profile">
+								<form action="" class="form-inline row">
+									<div class="form-group">
+										<label for="">经济情况</label>
+										<select name="" id="">
+											<option value="">一般</option>
+											<option value="">良好</option>
+											<option value="">小康</option>
+											<option value="">富有</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="">经济情况</label>
+										<select name="" id="">
+											<option value="">其他</option>
+											<option value="">小康</option>
+										</select>
+									</div>
+									<fieldset class="form-group col-md-12 fset">
+										<legend>家电</legend>
+										<div class="col-md-4">
+											<label for="">电视：</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="col-md-4">
+											<label for="">冰箱：</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="col-md-4">
+											<label for="">手机：</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="col-md-4">
+											<label for="">电风扇：</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="col-md-4">
+											<label for="">洗衣机：</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="col-md-4">
+											<label for="">计算机：</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="col-md-4">
+											<label for="">固定电话：</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="col-md-4">
+											<label for="">其他家电：</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="col-md-4">
+											<label for="">U盘，移动硬盘：</label>
+											<input type="text" class="form-control">
+										</div>
+									</fieldset>
+									<fieldset class="form-group col-md-12 fset">
+										<legend>牧畜</legend>
+										<div class="col-md-3">
+											<label for="">羊:</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="col-md-3">
+											<label for="">牛:</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="col-md-3">
+											<label for="">&nbsp;&nbsp;&nbsp;&nbsp;马:</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="col-md-3">
+											<label for="">鸡:</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="col-md-3">
+											<label for="">鸭:</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="col-md-3">
+											<label for="">鹅:</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="col-md-3">
+											<label for="">鸽子:</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="col-md-3">
+											<label for="">驴:</label>
+											<input type="text" class="form-control">
+										</div>
+									</fieldset>
+									<fieldset class="form-group col-md-12 fset">
+										<legend>农作物</legend>
+										<div class="col-md-4">
+											<label for="">玉米:</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="col-md-4">
+											<label for="">小麦:</label>
+											<input type="text" class="form-control">
+										</div>
+										<div class="col-md-4">
+											<label for="">棉花:</label>
+											<input type="text" class="form-control">
+										</div>
+									</fieldset>
+									<fieldset class="form-group col-md-12">
+										<legend>其他资产</legend>
+										<div class="col-md-12">
+											<label for="">各种车辆:</label>
+											<input type="text" class="form-control">
+										</div>
+										
+									</fieldset>
+								</form>
+							</div>
+							<div role="tabpanel" class="tab-pane" id="messages">
+								<ul class="nav nav-tabs" role="tablist">
+								    <li role="presentation" class="active"><a href="#person-info" aria-controls="person-info" role="tab" data-toggle="tab">涉稳人员信息</a></li>
+								    <li role="presentation"><a href="#goods-info" aria-controls="goods—info" role="tab" data-toggle="tab">涉稳物品</a></li>
+								</ul>
+								<div class="tab-content">
+								    <div role="tabpanel" class="tab-pane active" id="person-info">
+								    	<form action="" class="form-inline">
+											<fieldset style="margin-top: 10px;">
+												<legend>涉稳人员类别</legend>
+												<label class="checkbox-inline">
+													<input type="checkbox" id="inlineCheckbox1" value="option1"> 不法分子
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" id="inlineCheckbox2" value="option2"> 干坏事情的家伙
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" id="inlineCheckbox3" value="option3"> 没有护照的家伙
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" id="inlineCheckbox3" value="option3"> 没有护照的家伙
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" id="inlineCheckbox3" value="option3"> 没有护照的家伙
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" id="inlineCheckbox3" value="option3"> 没有护照的家伙
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" id="inlineCheckbox3" value="option3"> 没有护照的家伙
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" id="inlineCheckbox3" value="option3"> 没有护照的家伙
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" id="inlineCheckbox3" value="option3"> 没有护照的家伙
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" id="inlineCheckbox3" value="option3"> 没有护照的家伙
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" id="inlineCheckbox3" value="option3"> 没有护照的家伙
+												</label>
+												<label class="checkbox-inline">
+													<input type="checkbox" id="inlineCheckbox3" value="option3"> 没有护照的家伙
+												</label>
+											</fieldset>
+											<fieldset style="margin-top: 10px;">
+												<legend>通用</legend>
+												<div class="form-group">
+													<label for="">现实表现</label>
+													<select name="" id="">
+														<option value="">表现的很优秀</option>
+														<option value="">表现的很优秀</option>
+														<option value="">表现的很优秀</option>
+													</select>
+												</div>
+												<div class="form-group">
+													<label for="">效果评估</label>
+													<select name="" id="">
+														<option value="">一般的关注类</option>
+														<option value="">一般的关注类</option>
+														<option value="">一般的关注类</option>
+														<option value="">一般的关注类</option>
+													</select>
+												</div>
+												<div class="form-group col-md-12">
+													<label for="">&nbsp;&nbsp;&nbsp;&nbsp;护照号</label>
+													<input type="text" class="form-control">
+												</div>
+												<div class="form-group col-md-12">
+													<h4>出境记录:</h4>
+													<textarea name="" id="" cols="50" rows="5"></textarea>
+												</div>
+												<div class="form-group  col-md-12">
+													<!-- <label for="">犯罪记录</label> -->
+													<h4>犯罪记录:</h4>
+													<textarea name="" id="" cols="50" rows="5"></textarea>
+												</div>
+											</fieldset>
+
+								    	</form>
+								    </div>
+								    <div role="tabpanel" class="tab-pane" id="goods-info">...</div>
+								</div>		
+							</div>
+							<div role="tabpanel" class="tab-pane" id="personinfo">
+								<form action="" class="form-inline">
+									<fieldset>
+										<legend>流动人员</legend>
+										<div class="form-group">
+											<label for="">流动方式：</label>
+											<select name="" id="">
+												<option value="">流入</option>
+												<option value="">流出</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="">居住方式：</label>
+											<select name="" id="">
+												<option value="">单身租住</option>
+												<option value="">其他的</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="">流入区域：</label>
+											<select name="" id="">
+												<option value="">其他</option>
+												<option value="">流出</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="">流动原因：</label>
+											<select name="" id="">
+												<option value="">其他</option>
+												<option value="">其他</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="">流动时间：</label>
+											<select name="" id="">
+												<option value="">短期</option>
+												<option value="">长期</option>
+												<option value="">定居</option>
+											</select>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+			      	</div>
+			    	<div class="modal-footer">
+				        <button type="button" class="btn btn-default closemodal2" data-dismiss="modal">关闭</button>
+				        <button type="button" class="btn btn-primary">保存修改</button>
+			      	</div>
+			    </div>
+  			</div>
+		</div>
+
+		
+
+	</body>
+	<script type="text/javascript">
+		
+	</script>
+</html>

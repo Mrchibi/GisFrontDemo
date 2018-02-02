@@ -21,25 +21,24 @@
                 <div id="myexample">
                     <ul class="nav navbar-nav"><!--导航条列表容器 -->
                         <li class="dropdown"><!--下拉菜单项容器-->
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">人员信息
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"  name="m_PersonInfo">
                                 <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li id="m_Person_Edit_Id"></li>
+                                <li id="m_Person_Query_Id"></li>
+                                <li id="m_Person_ADVQuery_Id"></li>
                             </ul><!--下拉菜单项-->
                         </li><!-- 下拉菜单 -->
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">房屋信息
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="m_HouseInfoId">
                                 <b class="caret"></b>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">房屋录入</a></li>
-                                <li><a href="#">楼房录入</a></li>
-                                <li><a href="#">房屋查询</a></li>
-                                <li><a href="#">房屋显示</a></li>
+                                <li><a href="#" id="m_House_Edit_Id"></a></li>
+                                <li><a href="#" id="m_Build_Edit_Id"></a></li>
+                                <li><a href="#" id="m_House_Query_Id"></a></li>
+                                <li><a href="#" id="m_House_Show_Id"></a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
@@ -112,11 +111,49 @@
     <main class="main">
         <div class="measurement-tool row">
             <ul class="tool-ul">
-                <li><abbr title="HankWang1"><a href="" class="iconfont icon-cehuifabuzhaopian"></a></abbr></li>
-                <li><abbr title="HankWang2"><a href="" class="iconfont icon-cehuifabuxianshiweizhi"></a></abbr></li>
-                <li><abbr title="HankWang3"><a href="" class="iconfont icon-cehuifabuyijianfabu"></a></abbr></li>
-                <li><abbr title="HankWang4"><a href="" class="iconfont icon-cehuiyudili" ></a></abbr></li>
+                <li><abbr title="HankWang1"><a href="" class="iconfont icon-cehuifabuzhaopian" id="t_Measure_Lenght_ID" name="t_Measure_Lenght"></a></abbr></li>
+                <li><abbr title="HankWang2"><a href="" class="iconfont icon-cehuifabuxianshiweizhi" id="t_Measure_Area_ID" name="t_Measure_Area"></a></abbr></li>
+                <li><abbr title="HankWang3"><a href="" class="iconfont icon-cehuifabuyijianfabu" id="t_Measure_Clear_ID" name="t_Measure_Clear"></a></abbr></li>
+                <li><abbr title="HankWang4"><a href="" class="iconfont icon-cehuiyudili" id="t_Editable_ID" name="t_Editable"></a></abbr></li>
+                <li><abbr title="HankWang5"><a href="" class="iconfont icon-cehuiyudili" id="t_Fullview_ID" name="t_Fullview"></a></abbr></li>
+            </ul>
 
+
+        </div>
+        <div class="sidebar-menu"><!-- 侧边栏 -->
+            <ul class="mainmenu">
+                <li class="limenu"><span>基本情况</span></li>
+                <li class="limenu"><span>重点情况</span></li>
+                <ul class="submenu">
+                    <div class="expand-triangle"></div>
+                    <li><b class=""></b><a href="">乡政府</a></li>
+                    <li><a href="">村委会</a></li>
+                    <li><a href="">中学</a></li>
+                    <li><a href="">小学</a></li>
+                    <li><a href="">派出所</a></li>
+                    <li><a href="">警务室</a></li>
+                    <li><a href="">清真寺</a></li>
+                    <li><a href="">巴扎</a></li>
+                    <li><a href="">卫生院</a></li>
+                </ul>
+                <li class="limenu"><span>关注人群</span></li>
+                <ul class="submenu">
+                    <div class="expand-triangle"></div>
+                    <li><a href="">特殊群体</a></li>
+                    <li><a href="">重点人员</a></li>
+                    <li><a href="">宗教人士</a></li>
+                    <li><a href="">严打在押人员</a></li>
+                </ul>
+                <li class="limenu"><span>其他的情况</span></li>
+                <ul class="submenu">
+                    <div class="expand-triangle"></div>
+                    <li><a href="">121212</a></li>
+                    <li><a href="">121212</a></li>
+                    <li><a href="">121212</a></li>
+                    <li><a href="">121212</a></li>
+                    <li><a href="">121212</a></li>
+                </ul>
+                <li class="limenu"><span>最后的信息</span></li>
             </ul>
         </div>
         <div class="pic"></div>
@@ -638,8 +675,28 @@
                 $('#myModal-detail-info').modal('toggle');
             });
         })
-
     </script>
+    <!--<script type="text/javascript">
+        $(function(){
+            $("#showDialog").click(function(){
+                getData();//获取json数据
+            });
+            function getData(){//获取json数据的函数
+                $.getJSON("menu.json",function(data){
+                    $("#Data").empty();//先清空tbody
+                    var strHTML = "";
+                    $.each(data,function(InfoIndex,Info){//遍历json里的数据
+                        strHTML += "";
+                        strHTML += ""+Info["name"]+"";
+                        strHTML += ""+Info["sex"]+"";
+                        strHTML += ""+Info["years"]+"";
+                        strHTML += ""+Info["email"]+"";
+                        strHTML += "";
+                    });
+                    $("#Data").html(strHTML);//显示到tbody中
+                });
+            }
+    </script>-->
     <script src="../config/bootstrap-3.3.7-dist/js/jquery.js"></script>
     <script src="../config/bootstrap-3.3.7-dist/js/bootstrap.min.js" ></script>
 </body>

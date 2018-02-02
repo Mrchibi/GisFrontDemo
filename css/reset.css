@@ -11,17 +11,17 @@ span,
 header,
 body,
 p {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 .fl {
-    float: left;
+  float: left;
 }
 .fr {
-    float: right;
+  float: right;
 }
 .font {
-    font-family: italic arial, sans-serif;
-    font-size: 18px;
-    color: black;
+  font-family: italic arial, sans-serif;
+  font-size: 18px;
+  color: black;
 }

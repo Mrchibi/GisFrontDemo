@@ -16,12 +16,10 @@ body{
 .liul:hover ul{
 	display:block;
 	position:absolute;
-	top:305px;
-	left:158px;
+	top:30px;
+	left:170px;
 
 }
-
-
 
 .main{
 	position: relative;
@@ -50,6 +48,68 @@ body{
 		text-decoration: none;
 	}
 }
+/* 
+	sidebar-menu 
+ */
+
+.sidebar-menu{
+	position: fixed;
+	top:120px;
+	left:30px;
+	background-color:#F8F8F8;
+	width:150px;
+	border:1px solid gray;
+	border-radius:5px;
+	box-shadow: 1px;
+	color: #777777;
+	.limenu{
+		height: 30px;
+		line-height: 30px;
+		padding-left:10px;
+		border-bottom: 1px solid #F1E1E1;
+	}
+
+	li{
+		list-style:none;
+	}
+	a{
+		color:#777777;
+		text-decoration: none;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	.submenu{
+		background-color:#F1F0F0;
+		// margin-left:-10px;
+		text-align: center;	
+		li{
+			height:30px;
+			line-height: 30px;
+		}	
+		li:hover{
+			background-color:#B10C0C;
+		}
+	}
+	span{
+		cursor:pointer;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // nav position
 
 // modal module
@@ -95,7 +155,6 @@ body{
 	}
 
 }
-
 
 .fset{
 	div{

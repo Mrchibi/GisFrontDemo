@@ -1,0 +1,35 @@
+﻿
+var rightList={
+	menus:[
+		{id:'m_PersonInfoId',name:'m_PersonInfo',label:'人员信息',childens:[
+			{id:'m_Person_Edit_Id',name:'m_Person_Edit',label:'人员编辑',childens:[]},
+			{id:'m_Person_Query_Id',name:'m_Person_Query',label:'人员查询',childens:[]},
+			{id:'m_Person_ADVQuery_Id',name:'m_Person_ADVQuery',label:'高级查询',childens:[]},       
+			{id:'m_Person_Relation_Id',name:'m_Person_Relation',label:'人员关系',childens:[]}
+		]},
+		{id:'m_HouseInfoId',name:'m_HouseInfo',label:'房屋信息',childens:[
+			{id:'m_House_Edit_Id',name:'m_House_Edit',label:'房屋录入',childens:[]},
+			{id:'m_Build_Edit_Id',name:'m_Build_Edit',label:'楼房录入',childens:[]},
+			{id:'m_House_Query_Id',name:'m_House_Query',label:'房屋查询',childens:[]},              
+			{id:'m_House_Show_Id',name:'m_House_Show',label:'房屋显示',childens:[]}
+		]}
+	],
+	layers:[
+		{id:'l_BaseInfoId',name:'l_BaseInfo',label:'基本情况',image:'\img.png',childens:[
+			{id:'l_KeyPoint_ID',name:'l_KeyPoint',label:'重点目标',image:'\img.png',childens:[
+				{id:'l_XIANG_ID',name:'l_XIANG',label:'乡政府',image:'\img.png',childens:[]},
+				{id:'l_CUN_ID',name:'m_House_Query',label:'村委会',image:'\img.png',childens:[]},          
+				{id:'l_ZHONGXUE_Id',name:'m_House_Show',label:'中学',image:'\img.png',childens:[]}
+			]}
+			
+		]}
+	
+	],
+	tools:[
+		{id:'t_Measure_Lenght_ID',name:'t_Measure_Lenght',label:'测量长度',image:'\img.png',childens:[]},
+		{id:'t_Measure_Area_ID',name:'t_Measure_Area',label:'测量面积',image:'\img.png',childens:[]},
+		{id:'t_Measure_Clear_ID',name:'t_Measure_Clear',label:'清除测量结果',image:'\img.png',childens:[]}, 
+		{id:'t_Editable_ID',name:'t_Editable',label:'编辑状态',image:'\img.png',childens:[]},
+		{id:'t_Fullview_ID',name:'t_Fullview',label:'初始位置',image:'\img.png',childens:[]}
+	]
+}
